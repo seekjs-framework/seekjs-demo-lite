@@ -17,11 +17,11 @@ require("css.class");
 
 var app = require("sys.app");
 
-app.addView(require("js.view"));
-app.addPipe(require("js.pipe"));
+app.viewEx = require("js.view");
+app.pipeEx = require("js.pipe");
 
 app.config({
-    path: `/pages/`
+    page: `/pages/`
 });
 
 app.init("home");
